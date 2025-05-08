@@ -9,9 +9,8 @@ const notoSansSC = Noto_Sans_SC({
 })
 
 export const metadata = {
-  title: "我的作品集",
-  description: "展示我最近完成的项目作品",
-    generator: 'v0.dev'
+  title: "程式作品集",
+  description: "展示我完成過的程式專案",
 }
 
 export default function RootLayout({
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="zh-TW" suppressHydrationWarning>
       <body className={notoSansSC.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
